@@ -18,8 +18,3 @@ export default function index({}: Props) {
       <Skills/>
       <Projects/>
       <Contact/>
-
-
-    </div>
-  )
-}

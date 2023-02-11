@@ -34,14 +34,11 @@ export default function Header({ }: Props) {
                     <SocialIcon url="https://email.com/jaketrent" fgColor='gray' bgColor='transparent' />
                     <div className='hidden sm:inline-flex'>Get in Touch</div>
                 </motion.div>
-
             </header>
 
-
-            
             {/* PIC and Text  */}
             <motion.div
-                initial={{ opacity: 0, y: -200 }}
+                initial={{ opacity: 0, y: -200 }} 
                 whileInView={{
                     opacity: 1, y: 0,
                 }}
@@ -49,7 +46,7 @@ export default function Header({ }: Props) {
                 <img className='rounded-full w-[84px] h-[84px] object-cover' src="https://www.upwork.com/profile-portraits/c1qsAag4Devv0SGTAgnz6MkHdC4hvJZOJcsXgTznnxl9M3hHhc5-st7rIhdFUC8nXx" alt="Ahmad image" />
                 <motion.div initial={{ opacity: 0, y: -200 }}
                     whileInView={{
-                        opacity: 1, y: 0, scale: [1,2,3,1,2,1],
+                        opacity: 1, y: 0, scale: [1, 2, 3, 1, 2, 1],
                     }}
                     transition={{ duration: 2.5 }} className='w-[390px] h-[390px]  border-opacity-10 absolute  border border-yellow-300 opacity-40  rounded-full' />
                 <p className='tracking-[.35em] text-gray-100 opacity-40 '>Software Engineer</p>
@@ -60,7 +57,6 @@ export default function Header({ }: Props) {
                         typeSpeed={70}
                         deleteSpeed={50}
                         delaySpeed={1000}
-
                     />
                     <Cursor cursorColor='yellow' />
                 </div>
@@ -87,7 +83,6 @@ export default function Header({ }: Props) {
                         transition={{ duration: 1.5 }}>Projects</motion.p>
                 </div>
             </motion.div>
-
         </div>
     )
 }
